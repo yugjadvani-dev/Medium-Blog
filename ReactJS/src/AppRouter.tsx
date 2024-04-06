@@ -1,9 +1,9 @@
 import React from "react";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import FetchUseEffect from "./useEffectVSuseQuery/FetchUseEffect";
-import FetchUseQuery from "./useEffectVSuseQuery/FetchUseQuery";
-import Layout from "./components/Layout";
 import routerConfig from "./utils/routerConfig";
+import Layout from "@components/Layout";
+import FetchUseEffect from "@useEffectVSuseQuery/FetchUseEffect";
+import FetchUseQuery from "@useEffectVSuseQuery/FetchUseQuery";
 
 const router = createBrowserRouter([
   {
