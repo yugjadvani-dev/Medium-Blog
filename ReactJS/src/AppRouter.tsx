@@ -1,14 +1,10 @@
 import React from "react";
-import {
-  Route,
-  RouterProvider,
-  Routes,
-  createBrowserRouter,
-} from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import routerConfig from "./utils/routerConfig";
 import Layout from "@components/Layout";
-import FetchUseEffect from "@useEffectVSuseQuery/FetchUseEffect";
-import FetchUseQuery from "@useEffectVSuseQuery/FetchUseQuery";
+import FetchUseEffect from "@pages/useEffectVSuseQuery/FetchUseEffect";
+import FetchUseQuery from "@pages/useEffectVSuseQuery/FetchUseQuery";
+import PDFRenderer from "@pages/PDFRenderer/PDFRenderer";
 
 // const router = createBrowserRouter([
 //   {
@@ -35,6 +31,7 @@ const AppRouter: React.FC = () => {
           element={<FetchUseEffect />}
         />
         <Route path={routerConfig.fetchUseQuery} element={<FetchUseQuery />} />
+        <Route path={routerConfig.PDFRenderer} element={<PDFRenderer />} />
       </Routes>
       {/* <RouterProvider router={router} /> */}
     </>
