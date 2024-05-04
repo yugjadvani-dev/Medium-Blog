@@ -9,6 +9,7 @@ const Layout: React.FC = () => {
         <Link to={routerConfig.fetchUseEffect}>Fetch UseEffect</Link>
         <Link to={routerConfig.fetchUseQuery}>Fetch @tanstack/react-query</Link>
         <Link to={routerConfig.PDFRenderer}>@react-pdf/renderer</Link>
+        <Link to={routerConfig.reactRouterDom}>react-router-dom</Link>
       </div>
     </>
   );
